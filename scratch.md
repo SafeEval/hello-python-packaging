@@ -21,15 +21,22 @@ Adding commit messages below.
 
 > Sem-Ver: another feature
 - `0.1.1.dev1`
+
 > Sem-Ver: another feature
 - `0.1.1.dev2`
+
 > Sem-Ver: feature
 - `0.2.0.dev3`
+
 > Sem-Ver: feature more
 - `0.2.0.dev4`
+
 > Some cool new thing
 > Sem-Ver: feature
+- `0.2.0.dev5`
 
-
+> Some cool new thing
+>
+> Sem-Ver: feature
 
 
