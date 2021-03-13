@@ -23,6 +23,22 @@ No release will be made.
 ```
 
 > feat: something cool again
+```
+$ semantic-release version
+Creating new version
+Current version: 0.1.0
+Bumping with a minor version to 0.2.0
+```
+
+Generated a changelog.
+
+```
+$ semantic-release changelog
+### Feature
+* Something cool again ([`3bede4a`](https://github.com/SafeEval/hello-pypi/commit/3bede4a25d0a69c3c86ef1bbb76fd35566579225))
+```
+
+> fix(foo): Fixed the foo bug
 
 
 
