@@ -1,0 +1,38 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* Sem-Ver: api-break
+* Sem-Ver: api-break
+* Sem-Ver: bugfix
+* Sem-Ver: deprecation
+* Sem-Ver: deprecation
+* More nonsense
+* No semver
+
+0.2.0
+-----
+
+* Some cool new thing
+* Some cool new thing Sem-Ver: feature
+* Sem-Ver: feature more
+* Sem-Ver: feature
+* Sem-Ver: another feature
+* Sem-Ver: another feature
+
+0.1.0.dev10
+-----------
+
+* Semver: feature
+* Sem-Ver: feature
+* feature: does it work?
+* Testing feature keyword
+* Adding scratch file
+* Changed formatting
+* Add setup files
+* setup.cfg uses readme for long desscription
+* Added docs folder
+* Initial commit
+* Initial commit

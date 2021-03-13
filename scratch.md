@@ -70,7 +70,12 @@ Tagged `git tag 1.0.0`
 > feature: something cool
 - `1.0.1.dev1`
 
-
+> Something cool
+>
+> The message
+>
+> Sem-Ver: feature
+- `1.1.0.dev2`
 
 
 
