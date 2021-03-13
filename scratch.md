@@ -26,6 +26,9 @@ Adding commit messages below.
 > Sem-Ver: feature
 - `0.2.0.dev3`
 > Sem-Ver: feature more
+- `0.2.0.dev4`
+> Some cool new thing
+> Sem-Ver: feature
 
 
 
