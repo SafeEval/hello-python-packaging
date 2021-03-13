@@ -5,3 +5,10 @@ requires = [
     "wheel"
 ]
 build-backend = "setuptools.build_meta"
+
+[tool.commitizen]
+tag_format = "v$minor.$major.$patch$prerelease"
+#version = "0.0.2"
+version_files = [
+    "hello_pypi/__version__.py"
+]
