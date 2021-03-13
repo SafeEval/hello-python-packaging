@@ -8,9 +8,12 @@ with PBR and versioning.
 Adding commit messages below.
 
 > Testing feature keyword
-- Bumped to dev7
+- Bumped to `0.0.1.dev7`
 
 > feature: does it work?
-- Bumped to dev8
+- Bumped to `0.0.1.dev8`
 
 > Sem-Ver: feature
+- Bumped to `0.1.0.dev9`!
+
+> Semver: feature
