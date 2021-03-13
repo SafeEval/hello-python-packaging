@@ -11,3 +11,6 @@ Adding commit messages below.
 - Bumped to dev7
 
 > feature: does it work?
+- Bumped to dev8
+
+> Sem-Ver: feature
