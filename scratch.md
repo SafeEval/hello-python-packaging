@@ -53,6 +53,8 @@ Then I tag the current commit as `0.2.0`.
 - `0.3.0.dev3`
 
 > Sem-Ver: deprecation
+- `0.3.0.dev3`
 
+> Sem-Ver: bugfix
 
 
