@@ -49,4 +49,15 @@ $ semantic-release print-version
 
 > fix(foo): Fixed the second foo bug
 
+```
+$ semantic-release publish
+warning: Changelog file not found: /home/ubuntu/Documents/git/hello-pypi/CHANGELOG.md - creating it.
+Bumping with a patch version to 0.2.2
+Pushing new version
+```
+
+> fix(foo): Fixed the third foo bug
+
+
+
 
