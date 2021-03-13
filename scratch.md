@@ -3,5 +3,11 @@
 This is a file for testing how commit messages work
 with PBR and versioning.
 
-Testing "feature" keyword
+# Testing Keywords.
 
+Adding commit messages below.
+
+> Testing feature keyword
+- Bumped to dev7
+
+> feature: does it work?
