@@ -17,3 +17,6 @@ Adding commit messages below.
 - Bumped to `0.1.0.dev9`!
 
 > Semver: feature
+- Bumped to `0.1.0.dev10`
+
+> Sem-Ver: another feature
