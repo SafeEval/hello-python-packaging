@@ -57,6 +57,10 @@ Pushing new version
 ```
 
 > fix(foo): Fixed the third foo bug
+Committed
+> fix(foo): Fixed the fourth foo bug
+Committed
+
 
 
 
