@@ -15,4 +15,15 @@ __version__ = "0.1.0"
 ```
 
 > feature: more cool stuff
+```
+$ semantic-release version
+Creating new version
+Current version: 0.1.0
+No release will be made.
+```
+
+> feat: something cool again
+
+
+
 
