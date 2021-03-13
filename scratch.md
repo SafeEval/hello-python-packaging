@@ -62,5 +62,11 @@ Then I tag the current commit as `0.2.0`.
 - `1.0.0.dev6`
 
 > Sem-Ver: api-break
+- `1.0.0.dev7`
+
+Tagged `git tag 1.0.0`
+- `1.0.0`
+
+> feature: something cool
 
 
