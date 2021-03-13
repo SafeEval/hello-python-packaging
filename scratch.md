@@ -59,3 +59,8 @@ Then I tag the current commit as `0.2.0`.
 - `0.3.0.dev5`
 
 > Sem-Ver: api-break
+- `1.0.0.dev6`
+
+> Sem-Ver: api-break
+
+
