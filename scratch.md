@@ -68,5 +68,9 @@ Tagged `git tag 1.0.0`
 - `1.0.0`
 
 > feature: something cool
+- `1.0.1.dev1`
+
+
+
 
 
