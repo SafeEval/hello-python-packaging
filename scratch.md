@@ -40,6 +40,13 @@ $ semantic-release changelog
 
 > fix(foo): Fixed the foo bug
 
+```
+$ semantic-release print-version --current
+0.2.0
+$ semantic-release print-version
+0.2.1
+```
 
+> fix(foo): Fixed the second foo bug
 
 
