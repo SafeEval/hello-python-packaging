@@ -15,7 +15,7 @@ look at [Commits and Versions](#commits-and-versions)
 
 This is required for both manual and Github Actions environments.
 
-Create a `hello_pypi/__version__.py` file.
+Create a `hello_pp/__version__.py` file.
 
 ```
 __version__ = "0.0.1"
@@ -25,7 +25,7 @@ Create a lightweight `setup.py` file. This will allow builds to work.
 
 ```
 from setuptools import setup
-from hello_pypi.__version__ import __version__
+from hello_pp.__version__ import __version__
 
 setup(version=__version__)
 ```
@@ -41,7 +41,7 @@ hvcs = github
 branch = main
 
 # Where to read/write version information.
-version_variable = hello_pypi/__version__.py:__version__
+version_variable = hello_pp/__version__.py:__version__
 
 # Does `publish` subcommand release to PyPI?
 upload_to_pypi = true
@@ -245,7 +245,7 @@ Show current version.
 $ semantic-release print-version --current
 0.2.0
 
-$ cat hello_pypi/__version__.py
+$ cat hello_pp/__version__.py
 __version__ = "0.2.0"
 ```
 
@@ -293,7 +293,7 @@ This will generate a changelog if none exist.
 
 ```
 $ semantic-release publish
-warning: Changelog file not found: /home/ubuntu/Documents/git/hello-pypi/CHANGELOG.md - creating it.
+warning: Changelog file not found: /home/ubuntu/Documents/git/hello-python-packaging/CHANGELOG.md - creating it.
 Bumping with a patch version to 0.2.2
 Pushing new version
 ```
@@ -303,7 +303,7 @@ If the `PYPI_TOKEN` and `GH_TOKEN` values are set, the new package will be relea
 
 ## Resources
 
-- [hello-pypi (Test PyPI)](https://test.pypi.org/project/js-hello-pypi/)
+- [hello-python-packaging (Test PyPI)](https://test.pypi.org/project/hello-python-packaging/)
 - [Docs: Getting Started](https://python-semantic-release.readthedocs.io/en/latest/#getting-started)
 - [Docs: Commands](https://python-semantic-release.readthedocs.io/en/latest/#commands)
 - [Docs: Env Vars](https://python-semantic-release.readthedocs.io/en/latest/envvars.html)

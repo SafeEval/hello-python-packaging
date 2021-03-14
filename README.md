@@ -1,4 +1,4 @@
-# hello-pypi
+# hello-python-packaging
 
 Exploring PyPI packaging for CLI tools from scratch.
 
@@ -8,19 +8,19 @@ Exploring PyPI packaging for CLI tools from scratch.
 ### Create Build Files
 
 Create these files
-- `pyproject.toml`: Defines the build system, build dependencies, and other metadata. 
+- `pyproject.toml`: Defines the build system, build dependencies, and other metadata.
 - `setup.cfg`: Static metadata. `setup.py` is for dynamic metadata, and should
     be avoided if possible.
 
 Add a block to `setup.cfg` that defines a CLI command, and the corresponding
 package function to call. Make sure to use `_` and not `-` in path names.
-Below defines the command `hello-pypi` to execute the function `main()`,
-in the module `hello_pypi.cli`.
+Below defines the command `hello-pp` to execute the function `main()`,
+in the module `hello_pp.cli`.
 
 ```
 [options.entry_points]
 console_scripts =
-    hello-pypi = hello_pypi.cli:main
+    hello-pp = hello_pp.cli:main
 ```
 
 ## How To Install and Run Locally
@@ -48,7 +48,7 @@ pip install .
 Run the command. It will only be available in the virtualenv (if used).
 
 ```
-$ hello-pypi 
+$ hello-pp
 Hello PyPI!
 ```
 
@@ -62,7 +62,7 @@ The production instance of PyPI uses a separate account.
 
 > TestPyPI – a separate instance of the Python Package
 > Index that allows you to try distribution tools and processes without affecting
-> the real index. 
+> the real index.
 
 Create a test PyPI API token: https://test.pypi.org/manage/account/token/
 
@@ -129,13 +129,13 @@ python3 -m twine upload --repository testpypi dist/*
 Install the test package.
 
 ```
-python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps js-hello-pypi 
+python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps hello-python-packaging
 ```
 
 Run the command. It will only be available in the virtualenv (if used).
 
 ```
-$ hello-pypi 
+$ hello-pp
 Hello PyPI!
 ```
 
