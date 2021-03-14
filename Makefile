@@ -1,11 +1,21 @@
+setup:
+	python3 -m pip install --upgrade pip
+	pip install setuptools wheel twine build
 
 build:
-	python -m pip install --upgrade pip
-	pip install setuptools wheel twine build
-	python -m build
+	python setup.py sdist bdist_wheel
 
 release:
-	python3 -m twine upload --repository testpypi dist/*
+	@semantic-release publish
+
+install:
+	pip install .
+
+this-version:
+	@semantic-release print-version --current
+
+next-version:
+	@semantic-release print-version
 
 clean:
 	rm -rf build dist *.egg-info

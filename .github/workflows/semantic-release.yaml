@@ -1,0 +1,28 @@
+# .github/workflows/semantic-release.yaml
+#
+# - Updates and commits the changelog.
+# - Tags the commit with the new release.
+# - Builds and uploads the package to PyPI.
+
+name: Semantic Release
+
+on: workflow_dispatch
+# on:
+#   push:
+#     branches:
+#       - try-python-semantic-release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Python Semantic Release
+      uses: relekang/python-semantic-release@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        pypi_token: ${{ secrets.PYPI_TOKEN }}
