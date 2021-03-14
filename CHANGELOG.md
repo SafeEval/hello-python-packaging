@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.0 (2021-03-13)
+### Feature
+* **another:** Another feature ([`3c3def5`](https://github.com/SafeEval/hello-pypi/commit/3c3def50802e904399a11c3af3f09ea6ff37a8f2))
+
 ## v1.1.0 (2021-03-13)
 ### Feature
 * **release:** Added ability to commit ([`66ca776`](https://github.com/SafeEval/hello-pypi/commit/66ca7763a8fc08b960217434ebbc41c5b5e4d774))
