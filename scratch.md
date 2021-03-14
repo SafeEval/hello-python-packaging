@@ -101,6 +101,12 @@ Committed. Still thinks `0.3.0`.
 > Some body content here.
 >
 > BREAKING CHANGE: Disaster. FOOBAR!
+Committed. Still thinks `0.3.0`.
+
+
+> feat(bigthing): Added some big feature
+>
+> BREAKING CHANGE: the big feature messes everything up
 
 
 
