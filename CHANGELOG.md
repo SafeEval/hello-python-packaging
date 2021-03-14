@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.0 (2021-03-14)
+### Feature
+* **pipeline:** Added Github action for release ([`1caca2c`](https://github.com/SafeEval/hello-pypi/commit/1caca2c449246bb8057f26d7440cfb369c252355))
+
 ## v1.3.0 (2021-03-13)
 ### Feature
 * **make:** Added make commands for PSR ([`2e7d62b`](https://github.com/SafeEval/hello-pypi/commit/2e7d62b69100c093342207e9bf499e6c8b93a89f))
