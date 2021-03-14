@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.0 (2021-03-14)
+### Feature
+* **scratch:** Test PRs to branch ([`cdd72d2`](https://github.com/SafeEval/hello-pypi/commit/cdd72d2320164a1bcef6e2b050d413617c68f48e))
+
 ## v1.4.0 (2021-03-14)
 ### Feature
 * **pipeline:** Added Github action for release ([`1caca2c`](https://github.com/SafeEval/hello-pypi/commit/1caca2c449246bb8057f26d7440cfb369c252355))
