@@ -112,5 +112,5 @@ Committed, this works!!! `1.0.0`.
 
 The default build process requires `setup.py` to work.
 
-
+Added the `PYPI_TOKEN` and `GH_TOKEN`.
 
