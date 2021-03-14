@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v3.0.1 (2021-03-14)
+### Fix
+* **release:** Updated PyPI package release name ([`b1fb811`](https://github.com/SafeEval/hello-python-packaging/commit/b1fb8110068ab39039a53b35e681d1790e69ee74))
+
+### Documentation
+* **versioning:** Renamed versioning docs ([`24c4a51`](https://github.com/SafeEval/hello-python-packaging/commit/24c4a518a147363c3d899d643f913ee1e41cfbdb))
+
 ## v3.0.0 (2021-03-14)
 ### Breaking
 * Changed the name of the repo, CLI command, and packages.  ([`6240f2c`](https://github.com/SafeEval/hello-python-packaging/commit/6240f2cb1e7f248fb9ef4199ddd924ddab764703))
