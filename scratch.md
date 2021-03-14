@@ -88,7 +88,13 @@ $ semantic-release print-version
 > break: breaking change 1
 Committed. Still thinks `0.3.0`.
 
+> This is a mess. Destroys everything!
+>
+> BREAKING CHANGE: Disaster. FOOBAR!
+Committed. Still thinks `0.3.0`.
 
 
+> BREAKING CHANGE: Disaster. FOOBAR! 2
+Committed. Still thinks `0.3.0`.
 
 
