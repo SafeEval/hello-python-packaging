@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.2 (2021-03-13)
+### Fix
+* **scratch:** More scratch stuff ([`2b6b55a`](https://github.com/SafeEval/hello-pypi/commit/2b6b55ac38d1955dd204ea3df640dec897c75027))
+
+### Documentation
+* **scratch:** More scratch stuff ([`0fe3a4b`](https://github.com/SafeEval/hello-pypi/commit/0fe3a4bc505f0c6fe7770d75baf885e22b18ebe5))
+
 ## v1.0.1 (2021-03-13)
 ### Fix
 * **build:** Added setup.py for building ([`2634c40`](https://github.com/SafeEval/hello-pypi/commit/2634c402010039ee9dd3e64d2925fd102608255f))
