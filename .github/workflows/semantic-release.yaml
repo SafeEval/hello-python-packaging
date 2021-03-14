@@ -3,14 +3,21 @@
 # - Updates and commits the changelog.
 # - Tags the commit with the new release.
 # - Builds and uploads the package to PyPI.
+#
+# Running multiple times without changes will
+# cause it to fail. Manual triggers will completely
+# stop if a tag already exists.
 
 name: Semantic Release
 
-on: workflow_dispatch
-# on:
-#   push:
-#     branches:
-#       - main
+# Automatic execution.
+on:
+  push:
+    branches:
+      - main
+
+# Manual execution.
+# on: workflow_dispatch
 
 jobs:
   release:
