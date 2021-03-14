@@ -1,4 +1,4 @@
-# Python Semantic Release
+# Versioning with Python Semantic Release
 
 To setup a new project, look at:
 - [File Setup](#file-setup)
