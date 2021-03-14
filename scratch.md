@@ -86,7 +86,7 @@ $ semantic-release print-version
 ```
 
 > break: breaking change 1
-Committed
+Committed. Still thinks `0.3.0`.
 
 
 
