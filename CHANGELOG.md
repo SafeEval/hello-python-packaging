@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.1 (2021-03-13)
+### Fix
+* **build:** Added setup.py for building ([`2634c40`](https://github.com/SafeEval/hello-pypi/commit/2634c402010039ee9dd3e64d2925fd102608255f))
+
 ## v1.0.0 (2021-03-13)
 ### Feature
 * **bigthing:** Added some big feature ([`93c6f4b`](https://github.com/SafeEval/hello-pypi/commit/93c6f4b56a0811e3270610aa951ae93a3f23d865))
