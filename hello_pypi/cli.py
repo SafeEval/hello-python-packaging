@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+from .__version__ import __version__
+
 
 def main():
-    print('Hello PyPI!')
+    print(f'Hello PyPI! ({__version__})')
 
