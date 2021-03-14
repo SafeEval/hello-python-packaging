@@ -72,5 +72,7 @@ Published new version (`publish`).
 - Changelog skipped over the changes created by `version`. Only includes `publish` changes.
 - Included `0.2.2`, skipped `0.2.3`, included `0.2.4`.
 
+> feat(bar): new bar feature
+Committed
 
 
