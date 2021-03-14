@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v2.1.0 (2021-03-14)
+### Feature
+* **release:** Trying manual execution again ([`d740b5f`](https://github.com/SafeEval/hello-pypi/commit/d740b5f72e36dd89e7abec705b6f1cdf5c97c41b))
+
+### Fix
+* **foo:** Fix foo 4 ([`c92ba10`](https://github.com/SafeEval/hello-pypi/commit/c92ba109bbb55788af42549c1d0d91f7db58fd06))
+* **bar:** Fix bar 3 ([`a63c586`](https://github.com/SafeEval/hello-pypi/commit/a63c586c17445c6a45600110b0ffe2cc78fcecd6))
+* **foo:** Fix foo 2 ([`28203c1`](https://github.com/SafeEval/hello-pypi/commit/28203c1d890808fc4da95ae63ac47caf569b95ba))
+* **foo:** Fix foo 1 ([`72c7379`](https://github.com/SafeEval/hello-pypi/commit/72c73794759959b497c62cecef9f0cd05520c625))
+
 ## v2.0.2 (2021-03-14)
 ### Fix
 * **config:** Point branch at main ([`06249cb`](https://github.com/SafeEval/hello-pypi/commit/06249cb1d36a3bf37874f4fae2b2d9a1643c6c54))
