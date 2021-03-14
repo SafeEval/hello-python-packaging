@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v3.0.0 (2021-03-14)
+### Breaking
+* Changed the name of the repo, CLI command, and packages.  ([`6240f2c`](https://github.com/SafeEval/hello-python-packaging/commit/6240f2cb1e7f248fb9ef4199ddd924ddab764703))
+
+### Documentation
+* **rename:** Updated docs with new names. ([`581ca47`](https://github.com/SafeEval/hello-python-packaging/commit/581ca476256ad14ac6824ba07ab5a87e409bf0a2))
+* **release:** Updated docs for setup.cfg/Github Actions ([`142eb8a`](https://github.com/SafeEval/hello-python-packaging/commit/142eb8aea495bfeb4a961b76072cb11556f9743c))
+
 ## v2.1.0 (2021-03-14)
 ### Feature
 * **release:** Trying manual execution again ([`d740b5f`](https://github.com/SafeEval/hello-pypi/commit/d740b5f72e36dd89e7abec705b6f1cdf5c97c41b))
