@@ -10,7 +10,7 @@ on: workflow_dispatch
 # on:
 #   push:
 #     branches:
-#       - try-python-semantic-release
+#       - main
 
 jobs:
   release:
