@@ -114,3 +114,7 @@ The default build process requires `setup.py` to work.
 
 Added the `PYPI_TOKEN` and `GH_TOKEN`.
 
+Published, and it committed the changelog to Github and released to PyPI.
+
+
+
