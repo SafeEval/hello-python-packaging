@@ -1,5 +1,7 @@
 # hello-python-packaging
 
+[![Known Vulnerabilities](https://snyk.io/test/github/SafeEval/hello-python-packaging/badge.svg)](https://snyk.io/test/github/SafeEval/hello-python-packaging)
+
 Exploring Python package builds, versioning, releases, pipelines, and
 everything else that make a quality Python project "go."
 
