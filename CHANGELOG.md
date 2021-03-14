@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v2.0.2 (2021-03-14)
+### Fix
+* **config:** Point branch at main ([`06249cb`](https://github.com/SafeEval/hello-pypi/commit/06249cb1d36a3bf37874f4fae2b2d9a1643c6c54))
+
 ## v1.5.0 (2021-03-14)
 ### Feature
 * **scratch:** Test PRs to branch ([`cdd72d2`](https://github.com/SafeEval/hello-pypi/commit/cdd72d2320164a1bcef6e2b050d413617c68f48e))
