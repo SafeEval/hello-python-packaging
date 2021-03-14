@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v2.0.1 (2021-03-14)
+
+
 ## v2.0.0 (2021-03-14)
 ### Feature
 * **pipeline:** Added Github action for release ([`1caca2c`](https://github.com/SafeEval/hello-pypi/commit/1caca2c449246bb8057f26d7440cfb369c252355))
