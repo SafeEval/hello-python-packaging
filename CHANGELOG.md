@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.3 (2021-03-13)
+### Fix
+* **deploy:** Configured setup.cfg to upload to testpypi ([`ce497da`](https://github.com/SafeEval/hello-pypi/commit/ce497da0de200258d528e0853912090fc572e0d5))
+
 ## v1.0.2 (2021-03-13)
 ### Fix
 * **scratch:** More scratch stuff ([`2b6b55a`](https://github.com/SafeEval/hello-pypi/commit/2b6b55ac38d1955dd204ea3df640dec897c75027))
