@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.0 (2021-03-13)
+### Feature
+* **release:** Added ability to commit ([`66ca776`](https://github.com/SafeEval/hello-pypi/commit/66ca7763a8fc08b960217434ebbc41c5b5e4d774))
+
 ## v1.0.3 (2021-03-13)
 ### Fix
 * **deploy:** Configured setup.cfg to upload to testpypi ([`ce497da`](https://github.com/SafeEval/hello-pypi/commit/ce497da0de200258d528e0853912090fc572e0d5))
