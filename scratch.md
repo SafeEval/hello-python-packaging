@@ -61,12 +61,16 @@ Committed
 > fix(foo): Fixed the fourth foo bug
 Committed
 
-Created new version.
+Created new version (`version`).
 - Changelog was not updated. The `changelog` subcommand only shows most recent changes.
 - Cannot then publish a change. The `version` and `publish` subcommands are mutually exclusive.
 
-
 > fix(foo): Fixed the fifth foo bug
+Committed
+
+Published new version (`publish`).
+- Changelog skipped over the changes created by `version`. Only includes `publish` changes.
+- Included `0.2.2`, skipped `0.2.3`, included `0.2.4`.
 
 
 
