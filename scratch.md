@@ -110,7 +110,7 @@ Committed. Still thinks `0.3.0`.
 Committed, this works!!! `1.0.0`.
 
 
-The default build process required `setup.py` to work.
+The default build process requires `setup.py` to work.
 
 
 
