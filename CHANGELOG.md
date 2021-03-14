@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.0 (2021-03-13)
+### Feature
+* **make:** Added make commands for PSR ([`2e7d62b`](https://github.com/SafeEval/hello-pypi/commit/2e7d62b69100c093342207e9bf499e6c8b93a89f))
+
+### Fix
+* **release:** Publishes to test pypi ([`7e0acde`](https://github.com/SafeEval/hello-pypi/commit/7e0acdeb32fb8464664a725421e5b65761f1c096))
+
+### Documentation
+* **psr:** Added setup config info ([`f5103b2`](https://github.com/SafeEval/hello-pypi/commit/f5103b27083777de75889bad229f46c4a2473df2))
+
 ## v1.2.0 (2021-03-13)
 ### Feature
 * **another:** Another feature ([`3c3def5`](https://github.com/SafeEval/hello-pypi/commit/3c3def50802e904399a11c3af3f09ea6ff37a8f2))
