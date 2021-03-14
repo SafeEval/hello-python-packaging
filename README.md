@@ -15,7 +15,7 @@ everything else that make a quality Python project "go."
 - [ ] Coverage
 - [ ] Linting
 - [ ] SAST
-- [ ] SCA
+- [x] SCA
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
 
