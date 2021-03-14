@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.0 (2021-03-14)
+### Documentation
+* Organized docs for setup and commits ([`2810385`](https://github.com/SafeEval/hello-pypi/commit/281038516ce020651da1681e1090a81a77d267f1))
+
 ## v1.5.0 (2021-03-14)
 ### Feature
 * **scratch:** Test PRs to branch ([`cdd72d2`](https://github.com/SafeEval/hello-pypi/commit/cdd72d2320164a1bcef6e2b050d413617c68f48e))
