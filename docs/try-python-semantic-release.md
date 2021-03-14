@@ -38,19 +38,19 @@ Add lines to `setup.cfg`, configuring it for build and release.
 hvcs = github
 
 # The primary branch to commit against.
-branch = try-python-semantic-release
+branch = main
 
 # Where to read/write version information.
 version_variable = hello_pypi/__version__.py:__version__
 
 # Does `publish` subcommand release to PyPI?
-#upload_to_pypi = false
+upload_to_pypi = true
 
 # Should `publish` subcommand use the test PyPI index?
 repository = testpypi
 
 # Does `publish` subcommand upload to Github Release?
-upload_to_release = false
+upload_to_release = true
 ```
 
 ### Environment Setup
@@ -77,17 +77,25 @@ export GH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxx
 There is an official [Github Action](https://python-semantic-release.readthedocs.io/en/latest/automatic-releases/github-actions.html)
 for running `semantic-release publish`.
 
-Configure the `PYPI_TOKEN` and `GH_TOKEN` values in the Github repo's secrets.
+Configure the `PYPI_TOKEN` value in the Github repo's secrets. The
+`GITHUB_TOKEN` value will be automatically set by Github.
+
+The workflow below specifies a manual release process, while the commented out
+block would release on every PR merged into `main`.
 
 ```
 # .github/workflows/semantic-release.yaml
 
 name: Semantic Release
 
-on:
-  push:
-    branches:
-      - try-python-semantic-release
+# Automatic releases.
+# on:
+#   push:
+#     branches:
+#       - main
+
+# Manual releases.
+on: workflow_dispatch
 
 jobs:
   release:
