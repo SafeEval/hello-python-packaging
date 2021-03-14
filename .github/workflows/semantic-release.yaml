@@ -6,10 +6,11 @@
 
 name: Semantic Release
 
-on:
-  push:
-    branches:
-      - try-python-semantic-release
+on: workflow_dispatch
+# on:
+#   push:
+#     branches:
+#       - try-python-semantic-release
 
 jobs:
   release:
