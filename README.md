@@ -9,14 +9,14 @@ everything else that make a quality Python project "go."
 
 ## Things to Explore
 
-- [x] Releasing
-- [x] Automatic versioning
-- [x] Automatic changelogs
-- [ ] Enforcing Conventional Commit messages (for automatic versioning/changelogs)
+- [x] Releasing (Python Semantic Release)
+- [x] Automatic versioning (Python Semantic Release)
+- [x] Automatic changelogs (Python Semantic Release)
+- [ ] Enforcing Conventional Commit messages
 - [ ] Pytest tests
 - [ ] Tox tests
 - [ ] Coverage
-- [ ] Linting
+- [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)
 - [ ] Contributing howto documentation
