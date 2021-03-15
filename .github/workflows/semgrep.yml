@@ -1,9 +1,13 @@
-on:
-  pull_request: {}
-  push:
-    branches:
-    - main
-    - master
+# on:
+#   pull_request: {}
+#   push:
+#     branches:
+#     - main
+#     - master
+
+# Manual execution.
+on: workflow_dispatch
+
 name: Semgrep
 jobs:
   semgrep:
