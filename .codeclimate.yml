@@ -1,0 +1,5 @@
+# .codeclimate.yml
+
+plugins:
+  pep8:
+    enabled: true
