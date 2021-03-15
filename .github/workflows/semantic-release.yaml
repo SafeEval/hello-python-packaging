@@ -33,4 +33,4 @@ jobs:
       with:
         pypi_token: ${{ secrets.PYPI_TOKEN }}
         # github_token: ${{ secrets.GITHUB_TOKEN }}
-        github_token: ${{ secrets.GH_TOKEN }}
+        github_token: ${{ secrets.FOOBARBAZ }}
