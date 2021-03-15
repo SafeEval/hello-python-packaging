@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v3.0.3 (2021-03-15)
+### Fix
+* **scratch:** Updated scratch from other account ([`d5a22c6`](https://github.com/SafeEval/hello-python-packaging/commit/d5a22c6ad17e33fc02d4acfca2fd6798f4986709))
+* **psr:** Putting semgrep on manual ([`747a4c2`](https://github.com/SafeEval/hello-python-packaging/commit/747a4c2505d1862d13aac03b0277b9ee33088942))
+* **psr:** Fixing PSR and protected branches ([`e5272a9`](https://github.com/SafeEval/hello-python-packaging/commit/e5272a9748020c30d0a9a7963f5ba5f44c6e7540))
+* **release:** Make PSR work with protected branches ([`c12c57a`](https://github.com/SafeEval/hello-python-packaging/commit/c12c57a0d0bcb80e59a16c5545d1d4275ba12d08))
+
 ## v3.0.2 (2021-03-15)
 ### Fix
 * **codeclimate:** Removed sloppy file ([`0407b37`](https://github.com/SafeEval/hello-python-packaging/commit/0407b374ffa04e7cacf05d8c19ca0bdea7d6b04d))
