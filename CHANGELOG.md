@@ -2,6 +2,19 @@
 
 <!--next-version-placeholder-->
 
+## v3.0.2 (2021-03-15)
+### Fix
+* **codeclimate:** Removed sloppy file ([`0407b37`](https://github.com/SafeEval/hello-python-packaging/commit/0407b374ffa04e7cacf05d8c19ca0bdea7d6b04d))
+* **codeclimate:** Removed sloppy code ([`e6843a3`](https://github.com/SafeEval/hello-python-packaging/commit/e6843a35dc70373df27e150cb5fe0101ed1aedba))
+* **codeclimate:** Commented out sloppy code ([`30d46fa`](https://github.com/SafeEval/hello-python-packaging/commit/30d46fab0b0fc425651f95c59e6aa2b5b981e225))
+
+### Documentation
+* **codeclimate:** Checked off linting ([`088351d`](https://github.com/SafeEval/hello-python-packaging/commit/088351d36b824b96cee2256efc0643fe2c769b68))
+* **codeclimate:** Added Code Climate badges. ([`0239b67`](https://github.com/SafeEval/hello-python-packaging/commit/0239b67c81009b7b99aa7395e34063313bcf294b))
+* **semgrep:** Checked off SAST/Semgrep ([`c13b241`](https://github.com/SafeEval/hello-python-packaging/commit/c13b241d806443dbfbab7c66626f17ea38b05478))
+* **snyk:** Checked off Snyk (enabled) ([`c24b3ac`](https://github.com/SafeEval/hello-python-packaging/commit/c24b3acc393184bc9910691aa32d7b4e45e5971e))
+* **readme:** Moved release docs out of readme ([`d403f37`](https://github.com/SafeEval/hello-python-packaging/commit/d403f37ca65f26d5ec6611647df1e1f6c8642a55))
+
 ## v3.0.1 (2021-03-14)
 ### Fix
 * **release:** Updated PyPI package release name ([`b1fb811`](https://github.com/SafeEval/hello-python-packaging/commit/b1fb8110068ab39039a53b35e681d1790e69ee74))
