@@ -1,7 +1,6 @@
 
 # This should fail Semgrep's rules.
-1 == 1
+True == True
+False == False
+'a' == 'a'
 
-# This should fail Semgrep's rules.
-x = 1
-x == x
