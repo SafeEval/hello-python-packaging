@@ -14,8 +14,8 @@ everything else that make a quality Python project "go."
 - [ ] Tox tests
 - [ ] Coverage
 - [ ] Linting
-- [ ] SAST
-- [x] SCA
+- [x] SAST (Semgrep)
+- [x] SCA (Snyk)
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
 
