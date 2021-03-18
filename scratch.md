@@ -122,4 +122,5 @@ and opening a PR against the PSR test branch.
 
 Modifications from another account
 
-FOOOOOO. Is Circle disabled?
+Is Circle disabled?
+How about now?

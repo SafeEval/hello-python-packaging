@@ -1,17 +1,17 @@
-# on:
-#   pull_request: {}
-#   push:
-#     branches:
-#     - main
-#     - master
+on:
+  pull_request: {}
+  push:
+    branches:
+    - main
+    - master
 
 # Manual execution.
-on: workflow_dispatch
+# on: workflow_dispatch
 
 name: Semgrep
 jobs:
   semgrep:
-    name: Scan
+    name: Semgrep Scan
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
