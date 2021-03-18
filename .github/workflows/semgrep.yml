@@ -11,7 +11,7 @@ on:
 name: Semgrep
 jobs:
   semgrep:
-    name: Semgrep SAST
+    name: security/semgrep
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
