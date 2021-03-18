@@ -77,8 +77,8 @@ export GH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxx
 There is an official [Github Action](https://python-semantic-release.readthedocs.io/en/latest/automatic-releases/github-actions.html)
 for running `semantic-release publish`.
 
-Configure the `PYPI_TOKEN` value in the Github repo's secrets. The
-`GITHUB_TOKEN` value will be automatically set by Github.
+Configure the `PYPI_TOKEN` and `GH_TOKEN` values in the Github repo's secrets,
+similarly to the local environment setup above.
 
 The workflow below specifies a manual release process, while the commented out
 block would release on every PR merged into `main`.
@@ -104,14 +104,33 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
+        persist-credentials: false
         fetch-depth: 0
 
     - name: Python Semantic Release
       uses: relekang/python-semantic-release@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
         pypi_token: ${{ secrets.PYPI_TOKEN }}
+        github_token: ${{ secrets.GH_TOKEN }}
 ```
+
+This works even when branch protection is set on `main`, because a personal
+access token allows Semantic Release to commit the new changelog and release
+to the `main` branch.
+
+This is outlined in the documentation
+([source](https://python-semantic-release.readthedocs.io/en/latest/automatic-releases/github-actions.html?highlight=protection)):
+
+> Warning
+>
+> The GITHUB_TOKEN secret is automatically configured by GitHub, with the same
+> permissions as the user who triggered the workflow run. This causes a problem
+> if your default branch is protected.
+>
+> You can work around this by storing an administrator’s Personal Access Token as
+> a separate secret and using that instead of GITHUB_TOKEN. In this case, you
+> will also need to pass the new token to actions/checkout (as the token input)
+> in order to gain push access.
 
 
 ### Executable Setup
