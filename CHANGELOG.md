@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v4.0.0 (2021-03-18)
+### Breaking
+* rename the package  ([`0416a3b`](https://github.com/SafeEval/hello-python-packaging/commit/0416a3b247ba145fa6b9960178b92a2ea4520d97))
+
+### Documentation
+* **psr:** Docs outline Github Actions with PSR ([`d61423b`](https://github.com/SafeEval/hello-python-packaging/commit/d61423b24a8355d8245faf29b9c10719c61f2e82))
+
 ## v3.1.0 (2021-03-18)
 ### Feature
 * **circleci:** Added CircleCI hello world ([`c9687f0`](https://github.com/SafeEval/hello-python-packaging/commit/c9687f02b9d7a83bcd482f1c77a25b445f76776b))
