@@ -1,9 +1,10 @@
 on:
   pull_request: {}
   push:
+    # Run SAST scanning on all branches except main.
     branches:
-    - main
-    - master
+    - '*'
+    - '!main'
 
 # Manual execution.
 # on: workflow_dispatch
@@ -11,7 +12,7 @@ on:
 name: Semgrep
 jobs:
   semgrep:
-    name: Semgrep Scan
+    name: Semgrep SAST
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
