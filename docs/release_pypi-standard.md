@@ -54,7 +54,7 @@ Run the command. It will only be available in the virtualenv (if used).
 
 ```
 $ hello-pp
-Hello PyPI!
+Hello Python Project!
 ```
 
 
@@ -134,13 +134,13 @@ python3 -m twine upload --repository testpypi dist/*
 Install the test package.
 
 ```
-pip install -i https://test.pypi.org/simple/ js-hello-python-packaging
+pip install -i https://test.pypi.org/simple/ js-hello-python-project
 ```
 
 Run the command. It will only be available in the virtualenv (if used).
 
 ```
 $ hello-pp
-Hello Python Packaging! (3.0.1)
+Hello Python Project! (3.0.1)
 ```
 

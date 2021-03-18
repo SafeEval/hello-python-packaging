@@ -312,7 +312,7 @@ This will generate a changelog if none exist.
 
 ```
 $ semantic-release publish
-warning: Changelog file not found: /home/ubuntu/Documents/git/hello-python-packaging/CHANGELOG.md - creating it.
+warning: Changelog file not found: /home/ubuntu/Documents/git/hello-python-project/CHANGELOG.md - creating it.
 Bumping with a patch version to 0.2.2
 Pushing new version
 ```
@@ -322,7 +322,7 @@ If the `PYPI_TOKEN` and `GH_TOKEN` values are set, the new package will be relea
 
 ## Resources
 
-- [hello-python-packaging (Test PyPI)](https://test.pypi.org/project/hello-python-packaging/)
+- [hello-python-project (Test PyPI)](https://test.pypi.org/project/hello-python-project/)
 - [Docs: Getting Started](https://python-semantic-release.readthedocs.io/en/latest/#getting-started)
 - [Docs: Commands](https://python-semantic-release.readthedocs.io/en/latest/#commands)
 - [Docs: Env Vars](https://python-semantic-release.readthedocs.io/en/latest/envvars.html)

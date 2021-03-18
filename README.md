@@ -1,7 +1,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a31efb881a1146ccf298/maintainability)](https://codeclimate.com/github/SafeEval/hello-python-packaging/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a31efb881a1146ccf298/test_coverage)](https://codeclimate.com/github/SafeEval/hello-python-packaging/test_coverage)
 
-# hello-python-packaging
+# Hello: Python Project
 
 Exploring Python package builds, versioning, releases, pipelines, and
 everything else that make a quality Python project "go."
