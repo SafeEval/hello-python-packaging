@@ -39,7 +39,7 @@ source .venv/bin/activate
 Install the test package from the test instance of PyPI.
 
 ```
-pip install -i https://test.pypi.org/simple/ js-hello-python-packaging
+pip install -i https://test.pypi.org/simple/ js-hello-python-project
 ```
 
 ### Install from Local Repo
