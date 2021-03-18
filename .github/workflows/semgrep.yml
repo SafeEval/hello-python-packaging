@@ -9,10 +9,10 @@ on:
 # Manual execution.
 # on: workflow_dispatch
 
-name: Semgrep
+name: security/semgrep
 jobs:
   semgrep:
-    name: security/semgrep
+    name: Scan
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
