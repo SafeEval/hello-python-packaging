@@ -1,5 +1,4 @@
 on:
-  pull_request: {}
   push:
     # Run SAST scanning on all branches except main.
     branches:
