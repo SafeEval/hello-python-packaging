@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v3.1.0 (2021-03-18)
+### Feature
+* **circleci:** Added CircleCI hello world ([`c9687f0`](https://github.com/SafeEval/hello-python-packaging/commit/c9687f02b9d7a83bcd482f1c77a25b445f76776b))
+
+### Fix
+* **psr:** Trying persist-creds:false with GH_TOKEN ([`89b8a7f`](https://github.com/SafeEval/hello-python-packaging/commit/89b8a7f347280a4a24272899b4605a0bb1f35f1f))
+* **psr:** Trying persist-creds:false with GITHUB_TOKEN ([`822d06a`](https://github.com/SafeEval/hello-python-packaging/commit/822d06a3be04aaf01e247ce902ea64edc895f8c9))
+* **psr:** Setting persist-credentials=false ([`95cb2b5`](https://github.com/SafeEval/hello-python-packaging/commit/95cb2b5edecc8538454a4a2b37ada0b0154c5101))
+
 ## v3.0.3 (2021-03-15)
 ### Fix
 * **scratch:** Updated scratch from other account ([`d5a22c6`](https://github.com/SafeEval/hello-python-packaging/commit/d5a22c6ad17e33fc02d4acfca2fd6798f4986709))
