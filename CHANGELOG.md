@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v4.0.1 (2021-03-18)
+### Fix
+* **semgrep:** Only run once on PR ([`aed12a0`](https://github.com/SafeEval/hello-python-packaging/commit/aed12a03272854fa08f9a4a67bc479826533e129))
+
+### Documentation
+* **install:** Updated installation docs ([`335916e`](https://github.com/SafeEval/hello-python-packaging/commit/335916e45232e27355dbda16a4de0f9212b35b2c))
+
 ## v4.0.0 (2021-03-18)
 ### Breaking
 * rename the package  ([`0416a3b`](https://github.com/SafeEval/hello-python-packaging/commit/0416a3b247ba145fa6b9960178b92a2ea4520d97))
