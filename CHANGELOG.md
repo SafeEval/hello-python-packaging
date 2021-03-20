@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v4.0.2 (2021-03-20)
+### Fix
+* **action:** Converted tabs to spaces ([`aa56f88`](https://github.com/SafeEval/hello-python-project/commit/aa56f88d4cdcc9cb9e68d54ffeb03545ea3f8a0b))
+* **action:** Remove newlines ([`59affa6`](https://github.com/SafeEval/hello-python-project/commit/59affa627bfc0857ec1e5bb49100499a605933b5))
+* **action:** Fixed syntax error ([`70c44c7`](https://github.com/SafeEval/hello-python-project/commit/70c44c7f22f0df86455bfefcc6fb1170bbd6874e))
+
 ## v4.0.1 (2021-03-18)
 ### Fix
 * **semgrep:** Only run once on PR ([`aed12a0`](https://github.com/SafeEval/hello-python-packaging/commit/aed12a03272854fa08f9a4a67bc479826533e129))
