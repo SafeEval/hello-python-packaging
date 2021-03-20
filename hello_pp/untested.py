@@ -7,16 +7,16 @@ def this_has_no_test():
     print('Untested')
 
 
-def this_has_no_test2():
-    print('Untested')
+# def this_has_no_test2():
+#     print('Untested')
 
 
-def this_has_no_test3():
-    print('Untested')
+# def this_has_no_test3():
+#     print('Untested')
 
 
-def this_has_no_test4():
-    print('Untested')
+# def this_has_no_test4():
+#     print('Untested')
 
 
 # def this_has_no_test5():
