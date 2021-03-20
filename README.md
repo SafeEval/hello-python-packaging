@@ -1,5 +1,5 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/a31efb881a1146ccf298/maintainability)](https://codeclimate.com/github/SafeEval/hello-python-packaging/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a31efb881a1146ccf298/test_coverage)](https://codeclimate.com/github/SafeEval/hello-python-packaging/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3c645a2824da76d2aa07/maintainability)](https://codeclimate.com/github/SafeEval/hello-python-project/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3c645a2824da76d2aa07/test_coverage)](https://codeclimate.com/github/SafeEval/hello-python-project/test_coverage)
 
 # Hello: Python Project
 
