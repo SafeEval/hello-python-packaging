@@ -16,9 +16,10 @@ everything else that make a quality Python project "go."
 - [x] Automatic versioning (Python Semantic Release)
 - [x] Automatic changelogs (Python Semantic Release)
 - [ ] Enforcing Conventional Commit messages
-- [ ] Pytest tests
+- [x] Pytest tests
+- [x] Coverage
 - [ ] Tox tests
-- [ ] Coverage
+- [ ] Type checks (mypy)
 - [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)
