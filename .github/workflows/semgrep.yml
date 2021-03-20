@@ -1,13 +1,6 @@
-name: security/sast
+name: security
 
 on: [pull_request]
-
-# on:
-#   push:
-#     # Run SAST scanning on all branches except main.
-#     branches:
-#     - '*'
-#     - '!main'
 
 # Manual execution.
 # on: workflow_dispatch
