@@ -1,5 +1,8 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/3c645a2824da76d2aa07/maintainability)](https://codeclimate.com/github/SafeEval/hello-python-project/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/3c645a2824da76d2aa07/test_coverage)](https://codeclimate.com/github/SafeEval/hello-python-project/test_coverage)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/1113c5b92a8111115d95/maintainability)](https://codeclimate.com/github/SafeEval/hello-python-project/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1113c5b92a8111115d95/test_coverage)](https://codeclimate.com/github/SafeEval/hello-python-project/test_coverage)
+
 
 # Hello: Python Project
 
@@ -13,9 +16,10 @@ everything else that make a quality Python project "go."
 - [x] Automatic versioning (Python Semantic Release)
 - [x] Automatic changelogs (Python Semantic Release)
 - [ ] Enforcing Conventional Commit messages
-- [ ] Pytest tests
+- [x] Pytest tests
+- [x] Coverage
 - [ ] Tox tests
-- [ ] Coverage
+- [ ] Type checks (mypy)
 - [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)

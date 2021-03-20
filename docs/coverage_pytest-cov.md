@@ -37,10 +37,15 @@ Configure `pytest` to use the configuration automatically in `setup.cfg`.
 addopts = --cov-config=.coveragerc --cov=hello_pp --cov-report html
 ```
 
-Running `pytest` will also run coverage, and generate the HTML report in the `htmlcov` folder.
+Running `pytest` will also run coverage, and generate the HTML report in the
+`htmlcov` folder.
 
 
 ## Code Climate Coverage Reports
+
+Code Climate can receive and track code coverage reports.
+These won't show up in the project dashboard, until a coverage report is uploaded
+for the default branch (i.e. `main`).
 
 To allow uploading and tracking of coverage in Code Climate, set the coverage output
 format to XML in `setup.cfg`. A `coverage.xml` file will be generated instead of HTML.
