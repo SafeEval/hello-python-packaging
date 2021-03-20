@@ -22,10 +22,10 @@ jobs:
     - name: Install testing dependencies
       run: pip install pytest pytest-cov
 
-		- name: Test & publish code coverage
-			uses: paambaati/codeclimate-action@v2.7.5
-			env:
-				CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
-			with:
-				coverageCommand: pytest
-				debug: true
+    - name: Test & publish code coverage
+      uses: paambaati/codeclimate-action@v2.7.5
+      env:
+        CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
+      with:
+        coverageCommand: pytest
+        debug: true
