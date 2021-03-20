@@ -5,6 +5,9 @@ setup:
 build:
 	python setup.py sdist bdist_wheel
 
+test:
+	pytest --cov-config=.coveragerc --cov=hello_pp --cov-report html
+
 release:
 	@semantic-release publish
 
