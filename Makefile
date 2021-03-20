@@ -2,6 +2,9 @@ setup:
 	python3 -m pip install --upgrade pip
 	pip install setuptools wheel twine build
 
+lint:
+	pylint hello_pp/
+
 build:
 	python setup.py sdist bdist_wheel
 
