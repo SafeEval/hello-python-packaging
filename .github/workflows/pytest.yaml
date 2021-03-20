@@ -1,12 +1,14 @@
 name: test/pytest
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [pull_request]
+
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
 
 jobs:
   pytest:
@@ -14,13 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-
     - uses: actions/setup-python@v2
       with:
         python-version: '3.8'
-
 		- name: Install pytest
       run: pip install pytest pytest-cov
-
 		- name: Run pytest
 			run: pytest
