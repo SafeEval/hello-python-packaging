@@ -1,5 +1,7 @@
+name: security/semgrep
+
+
 on:
-  pull_request: {}
   push:
     # Run SAST scanning on all branches except main.
     branches:
@@ -9,7 +11,6 @@ on:
 # Manual execution.
 # on: workflow_dispatch
 
-name: security/semgrep
 jobs:
   semgrep:
     name: Scan
