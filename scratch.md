@@ -122,4 +122,17 @@ and opening a PR against the PSR test branch.
 
 Modifications from another account
 
+
+## Secrets and GitGuardian
+
 This is a benign commit.
+
+Something a little more interesting
+
+https://www.terraform.io/docs/cloud/api/team-tokens.html#sample-response
+
+```
+foo QnbSxjjhVMHJgw.atlasv1.gxZnWIjI5j752DGqdwEUVLOFf0mtyaQ00H9bA1j90qWb254lEkQyOdfqqcq9zZL7Sm0 bar
+```
+
+
