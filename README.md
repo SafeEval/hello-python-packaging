@@ -23,7 +23,7 @@ everything else that make a quality Python project "go."
 - [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)
-- [ ] Secrets detection (GitGuardian)
+- [ ] Secrets detection (GitGuardian, detect-secrets)
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
 
