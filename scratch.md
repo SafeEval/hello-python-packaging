@@ -129,10 +129,18 @@ This is a benign commit.
 
 Something a little more interesting
 
-https://www.terraform.io/docs/cloud/api/team-tokens.html#sample-response
+Terraform token from https://www.terraform.io/docs/cloud/api/team-tokens.html#sample-response
 
 ```
 QnbSxjjhVMHJgw.atlasv1.gxZnWIjI5j752DGqdwEUVLOFf0mtyaQ00H9bA1j90qWb254lEkQyOdfqqcq9zZL7Sm0
 ```
+
+Secure random 32 char from Python.
+
+```
+python -c 'import secrets; print(secrets.token_hex(32))'
+7cb5bc63520539df990386e461278e23ce47d46f29ee9d7bd2a0528915c64f2c
+```
+
 
 
