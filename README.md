@@ -15,7 +15,6 @@ everything else that make a quality Python project "go."
 - [x] Releasing (Python Semantic Release)
 - [x] Automatic versioning (Python Semantic Release)
 - [x] Automatic changelogs (Python Semantic Release)
-- [ ] Enforcing Conventional Commit messages
 - [x] Pytest tests
 - [x] Coverage
 - [ ] Tox tests
@@ -24,11 +23,12 @@ everything else that make a quality Python project "go."
 - [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)
-- [ ] Secrets detection (GitGuardian, detect-secrets)
+- [x] Secrets detection (GitGuardian, detect-secrets)
+- [x] Pre-commit hooks
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
-- [x] Pre-commit hooks
 - [ ] Code owners
+- [ ] Enforcing Conventional Commit messages
 
 
 ## Installation and Usage
