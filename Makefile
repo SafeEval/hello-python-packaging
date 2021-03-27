@@ -1,6 +1,8 @@
 setup:
 	python3 -m pip install --upgrade pip
 	pip install setuptools wheel twine build
+	pip install -r requirements.dev.txt
+	pre-commit install
 
 lint:
 	pylint hello_pp/
