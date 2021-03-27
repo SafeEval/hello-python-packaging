@@ -20,6 +20,7 @@ everything else that make a quality Python project "go."
 - [x] Coverage
 - [ ] Tox tests
 - [ ] Type checks (mypy)
+- [ ] Formatting (black)
 - [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)
