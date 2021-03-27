@@ -9,3 +9,7 @@ repos:
     rev: 19.3b0
     hooks:
     -   id: black
+-   repo: https://github.com/PyCQA/pylint
+    rev: pylint-2.7.2
+    hooks:
+    -   id: pylint
