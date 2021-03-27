@@ -1,3 +1,5 @@
+""" Package setup
+"""
 from setuptools import setup
 from hello_pp.__version__ import __version__
 
