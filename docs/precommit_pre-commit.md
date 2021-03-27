@@ -14,11 +14,19 @@ simple and clear: https://pre-commit.com/#quick-start
 
 ## Summarized Instructions
 
+### Installation
+
 1. Configure the `.pre-commit-config.yaml` file.
 2. Install the package: `pip install pre-commit`
 3. Use the package to install the hooks: `pre-commit install`
 4. Manually run hooks on all files: `pre-commit run --all-files`
 5. Continue regular flow. By default, hooks will be run on commit and push.
+
+### New Hooks
+
+1. Add the hook to the `.pre-commit-config.yaml` file.
+2. Use the package to install the hooks: `pre-commit install`
+3. Manually run hooks on all files: `pre-commit run --all-files`
 
 
 ## Configuration
