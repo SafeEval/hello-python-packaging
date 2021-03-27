@@ -20,14 +20,14 @@ everything else that make a quality Python project "go."
 - [x] Coverage
 - [ ] Tox tests
 - [ ] Type checks (mypy)
-- [ ] Formatting (black)
+- [x] Formatting (black)
 - [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)
 - [ ] Secrets detection (GitGuardian, detect-secrets)
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
-- [ ] Pre-commit hooks
+- [x] Pre-commit hooks
 
 
 ## Installation and Usage
