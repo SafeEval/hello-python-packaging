@@ -27,6 +27,7 @@ everything else that make a quality Python project "go."
 - [ ] Secrets detection (GitGuardian, detect-secrets)
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
+- [ ] Pre-commit hooks
 
 
 ## Installation and Usage
