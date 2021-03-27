@@ -9,4 +9,4 @@ from .__version__ import __version__
 def main():
     """ CLI entrypoint.
     """
-    print(f'Hello Python Project! ({__version__})')
+    print(f"Hello Python Project! ({__version__})")

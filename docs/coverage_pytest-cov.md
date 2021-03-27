@@ -161,4 +161,3 @@ https://docs.codeclimate.com/docs/test-coverage-troubleshooting-branch-names
 https://docs.codeclimate.com/docs/github-actions-test-coverage
 
 https://github.com/marketplace/actions/code-climate-coverage-action
-

@@ -20,23 +20,38 @@ everything else that make a quality Python project "go."
 - [x] Coverage
 - [ ] Tox tests
 - [ ] Type checks (mypy)
+- [x] Formatting (black)
 - [x] Linting (Code Climate)
 - [x] SAST (Semgrep)
 - [x] SCA (Snyk)
 - [ ] Secrets detection (GitGuardian, detect-secrets)
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
+- [x] Pre-commit hooks
+- [ ] Code owners
 
 
 ## Installation and Usage
 
-### Setup Virtualenv (Optional)
+### Setup Environment (Development)
 
 Create a virtualenv (if needed).
 
 ```
 python3 -m venv ./.venv
 source .venv/bin/activate
+```
+
+Install development dependencies.
+
+```
+pip install -r requirements.dev.txt
+```
+
+Install pre-commit hooks.
+
+```
+pre-commit install
 ```
 
 ### Install from Test PyPI
@@ -63,4 +78,3 @@ Run the command. It will only be available in the virtualenv (if used).
 $ hello-pp
 Hello Python Packaging! (3.0.1)
 ```
-

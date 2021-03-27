@@ -331,5 +331,3 @@ If the `PYPI_TOKEN` and `GH_TOKEN` values are set, the new package will be relea
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 - [Angular Commit](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits)
 - [Commit examples](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.8sw072iehlhg)
-
-

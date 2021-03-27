@@ -143,4 +143,3 @@ Run the command. It will only be available in the virtualenv (if used).
 $ hello-pp
 Hello Python Project! (3.0.1)
 ```
-
