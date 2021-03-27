@@ -28,6 +28,7 @@ everything else that make a quality Python project "go."
 - [ ] Contributing howto documentation
 - [ ] Automated documentation
 - [x] Pre-commit hooks
+- [ ] Code owners
 
 
 ## Installation and Usage
