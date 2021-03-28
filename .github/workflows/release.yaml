@@ -8,7 +8,7 @@
 # cause it to fail. Manual triggers will completely
 # stop if a tag already exists.
 
-name: Semantic Release
+name: release
 
 # Automatic execution.
 # on:
