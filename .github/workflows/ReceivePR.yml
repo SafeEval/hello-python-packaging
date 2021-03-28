@@ -1,0 +1,32 @@
+# https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+name: Receive PR
+
+# Unprivileged context
+# - Read-only repo token
+# - No access to secrets
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout remote branch.
+      - uses: actions/checkout@v2
+
+      # Imitation of a build process
+      - name: Build
+        run: /bin/bash echo "Build happens here"
+
+      - name: Save PR number
+        run: |
+          mkdir -p ./pr
+          echo ${{ github.event.number }} > ./pr/NR
+
+      # Artifacts are how unprivileged/privileged contexts can share data.
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: pr
+          path: pr/
