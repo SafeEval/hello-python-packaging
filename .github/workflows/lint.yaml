@@ -3,6 +3,14 @@ name: lint
 on: [push, pull_request]
 
 jobs:
+
+  external-foo:
+    name: external
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dump env
+      run: env
+
   lint:
     runs-on: ubuntu-latest
     steps:
