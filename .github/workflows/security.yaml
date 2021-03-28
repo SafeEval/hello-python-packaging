@@ -1,6 +1,6 @@
 name: security
 
-on: [pull_request]
+on: [pull_request_target]
 
 # Manual execution.
 # on: workflow_dispatch
