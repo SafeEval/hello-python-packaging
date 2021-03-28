@@ -17,7 +17,7 @@ jobs:
 
       # Imitation of a build process
       - name: Build
-        run: /bin/bash echo "Build happens here"
+        run: echo "Build happens here"
 
       - name: Save PR number
         run: |
