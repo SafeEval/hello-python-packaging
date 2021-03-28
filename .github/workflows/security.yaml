@@ -1,9 +1,7 @@
 name: security
 
+# Base repo context with access to secrets.
 on: [pull_request_target]
-
-# Manual execution.
-# on: workflow_dispatch
 
 jobs:
   semgrep:
@@ -14,7 +12,10 @@ jobs:
     - uses: returntocorp/semgrep-action@v1
       with:
         auditOn: push
-        publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
+        # Identifier
         publishDeployment: 415
+        # Credential
+        publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
       env:
+        # Required by Semgrep to write PR comments.
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
