@@ -1,14 +1,14 @@
 name: test
 
-# on: [pull_request]
+on: [pull_request_target]
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+#on:
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches:
+#      - main
 
 jobs:
   test:
