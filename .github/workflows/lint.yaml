@@ -1,6 +1,14 @@
 name: lint
 
-on: [pull_request_target]
+#on: [pull_request_target]
+on:
+  workflow_run:
+    workflows: ["*"]
+    # branches: [*]
+    types: 
+      - completed
+      - requested
+
 
 jobs:
 
@@ -8,6 +16,7 @@ jobs:
     name: external
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Dump env
       run: env
 
