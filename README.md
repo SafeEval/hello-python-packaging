@@ -29,6 +29,7 @@ everything else that make a quality Python project "go."
 - [ ] Automated documentation
 - [ ] Code owners
 - [ ] Enforcing Conventional Commit messages
+- [ ] Automatic upgrades (dependabot, Snyk)
 
 
 ## Installation and Usage
