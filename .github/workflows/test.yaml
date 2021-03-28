@@ -3,22 +3,22 @@ name: test
 # on: [pull_request]
 
 on:
-  push:
+  pull_request_target:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   test:
-    name: pytest
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
     - uses: actions/setup-python@v2
       with:
         python-version: '3.8'
+
     - name: Install testing dependencies
       run: pip install pytest pytest-cov
 
