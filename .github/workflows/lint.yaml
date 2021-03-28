@@ -3,10 +3,8 @@ name: lint
 #on: [pull_request_target]
 on:
   workflow_run:
-    workflows: ["*"]
-    # branches: [*]
+    workflows: ["security"]
     types: 
-      - completed
       - requested
 
 
