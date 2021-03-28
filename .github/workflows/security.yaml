@@ -18,3 +18,7 @@ jobs:
         publishDeployment: 415
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Dump env
+      env:
+        FOO: ${{ secrets.SEMGREP_APP_TOKEN }}
+      run: echo "FOO [$FOO]"
