@@ -1,6 +1,6 @@
 name: security
 
-# Base repo context with access to secrets.
+# Execute in context of base repo, with access to secrets.
 on: [pull_request_target]
 
 jobs:
