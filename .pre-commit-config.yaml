@@ -19,3 +19,16 @@ repos:
     -   id: detect-secrets
         args: ['--baseline', '.secrets.baseline']
         exclude: package.lock.json
+-   repo: https://github.com/returntocorp/semgrep
+    rev: v0.44.0
+    hooks:
+    -   id: semgrep
+        name: Semgrep Python
+        types: [python]
+        exclude: "^tests/"
+        args: ['--config', 'https://semgrep.dev/p/python', '--error']
+    -   id: semgrep
+        name: Semgrep Bandit
+        types: [python]
+        exclude: "^tests/"
+        args: ['--config', 'https://semgrep.dev/p/bandit', '--error']
