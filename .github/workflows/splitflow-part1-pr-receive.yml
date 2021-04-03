@@ -3,12 +3,15 @@
 # Example of a 'pull_request' trigger that runs in a non-privileged context,
 # and uploads artifacts to be handed of to a second workflow with privileges.
 
+# pull_request...
+#   - Will run from any branch
+#   - Is an unprivileged context
+#   - Read-only repo token
+#   - No access to secrets
+
 # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
 name: Receive PR
 
-# Unprivileged context
-# - Read-only repo token
-# - No access to secrets
 on:
   pull_request:
 
