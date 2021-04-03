@@ -1,0 +1,66 @@
+# Example of 'workflow_run` trigger, that executes this workflow
+# when a prerequisite workflow is requested or completed.
+
+# This particular example comments on a PR.
+# https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+name: Comment on the pull request
+
+
+# workflow_run is a privileged context
+#   - Access to secrets
+#   - Write access
+#   - Always run against the DEFAULT BRANCH (main/master/etc)
+on:
+  workflow_run:
+    workflows: ["Receive PR"]
+    types:
+      - completed
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    # if: >
+    #   ${{ github.event.workflow_run.event == 'pull_request' &&
+    #   github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      # Artifacts are how unprivileged/privileged contexts can share data.
+      # Use github-script to fill in missing input values, due to split context.
+      - name: Download artifact
+        uses: actions/github-script@v3.1.0
+        with:
+          script: |
+            var artifacts = await github.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: ${{github.event.workflow_run.id }},
+            });
+            var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "pr"
+            })[0];
+            var download = await github.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+            var fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/pr.zip', Buffer.from(download.data));
+
+      - name: Decompress artifact
+        run: unzip pr.zip
+
+      # Privileged context can use secrets, for things like commenting.
+      - name: 'Comment on PR'
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            var fs = require('fs');
+            var issue_number = Number(fs.readFileSync('./NR'));
+            await github.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              body: 'Everything is OK. Thank you for the PR!'
+            });
