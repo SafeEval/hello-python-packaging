@@ -1,15 +1,19 @@
+# Split workflow part 2 - privileged CI context
+
 # Example of 'workflow_run` trigger, that executes this workflow
 # when a prerequisite workflow is requested or completed.
-
 # This particular example comments on a PR.
+
+# workflow_run...
+#   - Always run against the DEFAULT BRANCH (main/master/etc)
+#   - Is a privileged context
+#   - Has access to secrets
+#   - Has write access
+#   - Will not show up in the PR checks
+
 # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
 name: Comment on the pull request
 
-
-# workflow_run is a privileged context
-#   - Access to secrets
-#   - Write access
-#   - Always run against the DEFAULT BRANCH (main/master/etc)
 on:
   workflow_run:
     workflows: ["Receive PR"]
