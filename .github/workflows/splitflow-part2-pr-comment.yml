@@ -1,3 +1,5 @@
+# Split workflow part 2 - privileged CI context
+
 # Example of 'workflow_run` trigger, that executes this workflow
 # when a prerequisite workflow is requested or completed.
 
