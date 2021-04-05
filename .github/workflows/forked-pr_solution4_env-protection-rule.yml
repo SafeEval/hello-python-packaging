@@ -5,7 +5,7 @@ on: [pull_request_target]
 
 jobs:
 
-	# Deliberately fails and will not continue, until PR is approved.
+  # Deliberately fails and will not continue, until PR is approved.
   approve:
     runs-on: ubuntu-latest
     steps:
@@ -13,18 +13,18 @@ jobs:
     - name: Approve
       run: echo "Pull requests require approval before running further actions."
 
-	# Run forked repo PR in base repo context, once approval passes
-	test:
+  # Run forked repo PR in base repo context, once approval passes
+  test:
     runs-on: ubuntu-latest
     steps:
 
-			# Checkout the forked repo PR code into the base repo
+      # Checkout the forked repo PR code into the base repo
       - name: Checkout
-			  uses: actions/checkout@v2
-				with:
-					ref: ${{ github.event.pull_request.head.sha }}
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
-			# Passes, with forked PR code analyzed in privileged context, after review
+      # Passes, with forked PR code analyzed in privileged context, after review
       - name: Privileged processing
         run: echo "Some sensitive command that executes code (tests) and/or uses secrets"
 
