@@ -1,4 +1,6 @@
 # yamllint disable-file
+name: Solution 4
+
 on: [pull_request_target]
 
 jobs:
