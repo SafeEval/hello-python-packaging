@@ -2,15 +2,15 @@
 name: Solution 3
 
 on:
-	pull_request_target:
-		types: [labeled]
+  pull_request_target:
+    types: [labeled]
 
 jobs:
 
-	# Run forked repo PR in base repo context, but only if labelled
+  # Run forked repo PR in base repo context, but only if labelled
   test:
     runs-on: ubuntu-latest
-		if: contains(github.event.pull_request.labels.*.name, 'safe to test')
+    if: contains(github.event.pull_request.labels.*.name, 'safe')
     steps:
 
       # Checkout the forked repo PR code into the base repo
