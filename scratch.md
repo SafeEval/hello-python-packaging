@@ -75,7 +75,7 @@ Published new version (`publish`).
 > feat(bar): new bar feature
 Committed
 
-> fix(bar): new bar feature
+> fix(bar): new bar featuresdafadsfsdf
 Committed
 
 The next version is bumped by a major point, from the feature.
