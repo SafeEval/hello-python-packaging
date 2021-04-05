@@ -5,17 +5,19 @@ on: [pull_request_target]
 
 jobs:
 
-  # Deliberately fails and will not continue, until PR is approved.
+  # Display notification to user, before pausing pipeline execution.
   approve:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Approve
+    - name: Approval Notification
       run: echo "Pull requests require approval before running further actions."
 
-  # Run forked repo PR in base repo context, once approval passes
+  # Run forked repo PR in base repo context, upon approval
   test:
     runs-on: ubuntu-latest
+    environment:
+      name: PR Approval
     steps:
 
       # Checkout the forked repo PR code into the base repo
