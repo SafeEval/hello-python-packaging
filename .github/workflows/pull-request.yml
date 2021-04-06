@@ -5,7 +5,7 @@ on: [pull_request]
 jobs:
 
   lint:
-    name: Quality/Lint
+    name: Lint
     runs-on: ubuntu-latest
     steps:
 
@@ -13,12 +13,14 @@ jobs:
 
       - uses: actions/setup-python@v2
 
-      - uses: psf/black@stable
-        with:
-          args: ". --check"
+      - name: Install linting dependencies
+        run: pip install black
+
+      - name: Run linting
+        run: black . --check
 
   test:
-    name: Quality/Test
+    name: Test
     runs-on: ubuntu-latest
     steps:
 
@@ -40,7 +42,7 @@ jobs:
         fail_ci_if_error: true
 
   sast:
-    name: Security/SAST
+    name: SAST Scan
     runs-on: ubuntu-latest
     steps:
 
