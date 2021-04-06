@@ -21,6 +21,7 @@ on: workflow_dispatch
 
 jobs:
   release:
+    name: Release to PyPI Test
     runs-on: ubuntu-latest
 
     steps:
@@ -33,4 +34,5 @@ jobs:
       uses: relekang/python-semantic-release@master
       with:
         pypi_token: ${{ secrets.PYPI_TOKEN }}
-        github_token: ${{ secrets.GH_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # github_token: ${{ secrets.GH_TOKEN }}
