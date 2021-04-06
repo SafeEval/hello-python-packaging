@@ -8,7 +8,7 @@ on:
 jobs:
 
   coverage:
-    name: Baseline coverage report
+    name: Baseline Coverage Report
     runs-on: ubuntu-latest
     steps:
 
@@ -30,7 +30,7 @@ jobs:
         fail_ci_if_error: true
 
   sast:
-    name: Security/SAST
+    name: SAST Scan
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
