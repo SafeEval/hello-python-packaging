@@ -1,5 +1,10 @@
 coverage:
   status:
-    patch:
+    project:
+      # Auto-adjust required overall coverage
       default:
-        target: 100%
+        target: auto
+    patch:
+      # Required coverage for new code
+      default:
+        target: 75%
