@@ -7,7 +7,7 @@ jobs:
   test:
     name: Test and Cover
     runs-on: ubuntu-latest
-		steps:
+    steps:
 
     - uses: actions/checkout@main
 
@@ -18,10 +18,10 @@ jobs:
     - name: Install testing dependencies
       run: pip install pytest pytest-cov
 
-		- name: Run tests
-			run: pytest --cov-config=.coveragerc --cov=hello_pp
+    - name: Run tests
+      run: pytest --cov-config=.coveragerc --cov=hello_pp
 
-		- name: "Upload coverage to Codecov"
-			uses: codecov/codecov-action@v1
-			with:
-				fail_ci_if_error: true
+    - name: "Upload coverage to Codecov"
+      uses: codecov/codecov-action@v1
+      with:
+        fail_ci_if_error: true
