@@ -5,27 +5,14 @@ on: [pull_request]
 jobs:
 
   lint:
+    # Stability issues with this action. Pinned beta version.
+    # https://github.com/psf/black/issues/2079
     name: Lint
     runs-on: ubuntu-latest
     steps:
-
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-python@v2
-
-      - name: Install linting dependencies
-        run: pip install black
-
-      - name: Run linting
-        run: black . --check
-
-  lint-action:
-    # Retrieving the action sometimes times out.
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - uses: psf/black@stable
+      - uses: psf/black@20.8b1
         with:
           args: ". --check"
 
