@@ -3,7 +3,7 @@ This Python module has no unit tests, which will show up during code coverage.
 """
 
 def trigger_bandit():
-    """ Semgrep bandit trigger  """
+    """ Semgrep bandit trigger   """
     import hashlib
     hashlib.sha1(1)
 
