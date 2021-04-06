@@ -12,6 +12,7 @@
 #   - Will not show up in the PR checks
 
 # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
+# https://dev.to/petrsvihlik/using-environment-protection-rules-to-secure-secrets-when-building-external-forks-with-pullrequesttarget-hci
 name: Comment on the pull request
 
 on:
