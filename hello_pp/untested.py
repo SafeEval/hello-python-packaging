@@ -8,26 +8,26 @@ def this_has_no_test():
     print("Untested")
 
 
-def this_has_no_test2():
-    """ Untested code """
-    print("Untested")
+# def this_has_no_test2():
+#     """ Untested code """
+#     print("Untested")
 
 
-def this_has_no_test3():
-    """ Untested code """
-    print("Untested")
+# def this_has_no_test3():
+#     """ Untested code """
+#     print("Untested")
 
 
-def this_has_no_test4():
-    """ Untested code """
-    print("Untested")
+# def this_has_no_test4():
+#     """ Untested code """
+#     print("Untested")
 
 
-def this_has_no_test5():
-    """ Untested code """
-    print("Untested")
+# def this_has_no_test5():
+#     """ Untested code """
+#     print("Untested")
 
 
-def this_has_no_test6():
-    """ Untested code """
-    print("Untested")
+# def this_has_no_test6():
+#     """ Untested code """
+#     print("Untested")
