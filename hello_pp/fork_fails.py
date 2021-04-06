@@ -2,7 +2,11 @@
 This Python module has no unit tests, which will show up during code coverage.
 """
 
-
+def trigger_semgrep_bandit():
+    """ Trigger the bandit ruleset """
+    import hashlib
+    hashlib.sha1(1)
+    
 def this_has_no_test():
     """ Untested code """
     print("Untested")
