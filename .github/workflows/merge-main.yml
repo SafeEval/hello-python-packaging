@@ -6,6 +6,7 @@ on:
       - main
 
 jobs:
+
   coverage:
     name: Baseline coverage report
     runs-on: ubuntu-latest
@@ -27,3 +28,16 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         fail_ci_if_error: true
+
+  sast:
+    name: Security/SAST
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: returntocorp/semgrep-action@v1
+      with:
+        auditOn: push
+        publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
+        publishDeployment: 415
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

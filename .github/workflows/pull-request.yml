@@ -3,8 +3,22 @@ name: Pull Request
 on: [pull_request]
 
 jobs:
+
+  lint:
+    name: Quality/Lint
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+
+      - uses: psf/black@stable
+        with:
+          args: ". --check"
+
   test:
-    name: Test
+    name: Quality/Test
     runs-on: ubuntu-latest
     steps:
 
@@ -24,3 +38,20 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         fail_ci_if_error: true
+
+  sast:
+    name: Security/SAST
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v1
+
+      - name: Semgrep Python ruleset
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: p/python
+
+      - name: Semgrep Bandit ruleset
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: p/bandit
