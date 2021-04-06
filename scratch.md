@@ -14,7 +14,7 @@ $ cat hello_pypi/__version__.py
 __version__ = "0.1.0"
 ```
 
-> feature: more cool stuff
+> feature: more cool stuffkjhjkhkhkjhjkh
 ```
 $ semantic-release version
 Creating new version
