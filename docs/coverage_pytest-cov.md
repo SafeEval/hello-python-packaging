@@ -40,6 +40,10 @@ addopts = --cov-config=.coveragerc --cov=hello_pp --cov-report html
 Running `pytest` will also run coverage, and generate the HTML report in the
 `htmlcov` folder.
 
+### Resources for Pytest
+
+https://pytest-cov.readthedocs.io/en/latest/config.html
+
 
 ## Code Climate Coverage Reports
 
@@ -147,11 +151,7 @@ The better check is Eforce Diff Coverage. It ensures that contributor's new code
 
 From experiments, the Eforce Total Coverage check an be bypassed if a developer pushes commits that lower the coverage by a little bit each time.
 
-
-## Resources
-
-https://pytest-cov.readthedocs.io/en/latest/config.html
-
+### Resources for Code Climate
 https://docs.codeclimate.com/docs/configuring-test-coverage
 
 https://docs.codeclimate.com/docs/configuring-test-coverage#list-of-subcommands
@@ -161,3 +161,98 @@ https://docs.codeclimate.com/docs/test-coverage-troubleshooting-branch-names
 https://docs.codeclimate.com/docs/github-actions-test-coverage
 
 https://github.com/marketplace/actions/code-climate-coverage-action
+
+
+## Codecov Coverage Reports
+
+The Codecov service can receive coverage reports for public repositories
+without using a token for uploading, solving the lack of choice between
+exposing secrets in unprivileged contexts or not enforcing coverage checks.
+
+Key points:
+- To generate a baseline, a coverage report needs to be uploaded from the default branch.
+- Triggering on `push` will upload new baseline reports from default each time a PR is merged.
+
+### Github Actions Workflow
+
+Create a workflow that will upload a baseline coverage report to Codecov on merge to main.
+
+```
+name: Merge to Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  coverage:
+    name: Baseline coverage report
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@main
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install testing dependencies
+      run: pip install pytest pytest-cov
+
+    - name: Run tests
+      run: pytest --cov-config=.coveragerc --cov=hello_pp
+
+    - name: Upload coverage
+      uses: codecov/codecov-action@v1
+      with:
+        fail_ci_if_error: true
+```
+
+Create a workflow that will run tests and upload coverage reports on any PR.
+
+```
+name: Pull Request
+
+on: [pull_request]
+
+jobs:
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@main
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install testing dependencies
+      run: pip install pytest pytest-cov
+
+    - name: Run tests
+      run: pytest --cov-config=.coveragerc --cov=hello_pp
+
+    - name: Upload coverage
+      uses: codecov/codecov-action@v1
+      with:
+        fail_ci_if_error: true
+```
+
+### Resources for Codecov
+
+Codecov service:
+- https://about.codecov.io/
+
+Codecov docs:
+- https://docs.codecov.io/docs/quick-start
+- https://docs.codecov.io/docs/common-recipe-list
+- https://docs.codecov.io/docs/supported-languages
+
+Github Actions:
+- https://github.com/codecov/example-python
+- https://github.com/marketplace/actions/codecov
+- https://github.com/codecov/codecov-action
