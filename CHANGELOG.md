@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v4.0.3 (2021-04-06)
+### Fix
+* Reference deploy env ([`737e9f0`](https://github.com/SafeEval/hello-python-project/commit/737e9f0f84ef8736c89da1b3a95a927fcfff7fdf))
+* Testing release ([`b57d83b`](https://github.com/SafeEval/hello-python-project/commit/b57d83b58b74ddc37854900b23bdde7c2d2756a1))
+
+### Documentation
+* **lint:** Add docs for linting with black. ([`7a49baa`](https://github.com/SafeEval/hello-python-project/commit/7a49baade5cb256c02cc256e727d0f7654168854))
+* **readme:** Update exploration checklist ([`42f218f`](https://github.com/SafeEval/hello-python-project/commit/42f218f7d1a3fbf2a3aebff2132925df84612e0e))
+* **secrets:** Add detect-secrets docs ([`75f6166`](https://github.com/SafeEval/hello-python-project/commit/75f616639e8f10bdfde03951782e07892a59f46d))
+* Add code owners to checklist ([`6a56f63`](https://github.com/SafeEval/hello-python-project/commit/6a56f6319bfc276b583676746c921d1265189be4))
+* Add info on new precommit hooks ([`a8d7f4b`](https://github.com/SafeEval/hello-python-project/commit/a8d7f4b7e2c5cd5b137bdcc315fc15ce9771e886))
+* Update exploration checklist ([`f17a88f`](https://github.com/SafeEval/hello-python-project/commit/f17a88ff1a50662bc882d529cd2d1b32c3104705))
+* Add dev install instructions ([`2836b25`](https://github.com/SafeEval/hello-python-project/commit/2836b25eb912f7f5fc58a9f162fa97cdcf2948b7))
+* **pre-commit:** Add pre-commit docs ([`2769aef`](https://github.com/SafeEval/hello-python-project/commit/2769aef711819d74121c9adfd4e34ff8ce8192f2))
+* **pre-commit:** Add pre-commit hook to readme checklist ([`374172f`](https://github.com/SafeEval/hello-python-project/commit/374172fe2f8ce15241fc5302f65209d95ffc1513))
+
 ## v4.0.2 (2021-03-20)
 ### Fix
 * **action:** Converted tabs to spaces ([`aa56f88`](https://github.com/SafeEval/hello-python-project/commit/aa56f88d4cdcc9cb9e68d54ffeb03545ea3f8a0b))
