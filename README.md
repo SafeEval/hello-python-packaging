@@ -14,6 +14,7 @@ everything else that make a quality Python project "go."
 
 - [x] Releasing (Python Semantic Release)
 - [x] Automatic versioning (Python Semantic Release)
+- [ ] Manual version bump (Python Semantic Release)
 - [x] Automatic changelogs (Python Semantic Release)
 - [x] Pytest tests
 - [x] Coverage
