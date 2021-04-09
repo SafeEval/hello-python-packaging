@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v4.0.6 (2021-04-09)
+
+
+## v4.0.5 (2021-04-09)
+
+
 ## v4.0.4 (2021-04-08)
 ### Documentation
 * Add handling external PRs with Github Actions ([`174a52f`](https://github.com/SafeEval/hello-python-project/commit/174a52f896c2b6f66393bc7582312a8a6056f77b))
