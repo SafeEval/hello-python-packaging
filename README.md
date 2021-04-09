@@ -1,7 +1,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1113c5b92a8111115d95/maintainability)](https://codeclimate.com/github/SafeEval/hello-python-project/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1113c5b92a8111115d95/test_coverage)](https://codeclimate.com/github/SafeEval/hello-python-project/test_coverage)
+[![codecov](https://codecov.io/gh/SafeEval/hello-python-project/branch/main/graph/badge.svg?token=I1M45NPQLM)](https://codecov.io/gh/SafeEval/hello-python-project)
 
 
 # Hello: Python Project
