@@ -1,0 +1,43 @@
+# .github/workflows/semantic-release.yaml
+#
+# - Updates and commits the changelog.
+# - Tags the commit with the new release.
+# - Builds and uploads the package to PyPI.
+#
+# Running multiple times without changes will
+# cause it to fail. Manual triggers will completely
+# stop if a tag already exists.
+
+name: Release Force Bump Patch
+
+# Automatic execution.
+# on:
+#   push:
+#     branches:
+#       - main
+
+# Manual execution.
+on: workflow_dispatch
+
+jobs:
+  release:
+    name: Release Patch Version to PyPI Test
+    environment:
+      name: Test PyPI Release
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install Python Semantic Release
+      run: pip install python-semantic-release
+
+    - name: Bump patch version
+      run: semantic-release publish --patch
