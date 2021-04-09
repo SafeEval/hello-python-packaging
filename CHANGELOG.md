@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v4.0.4 (2021-04-08)
+### Documentation
+* Add handling external PRs with Github Actions ([`174a52f`](https://github.com/SafeEval/hello-python-project/commit/174a52f896c2b6f66393bc7582312a8a6056f77b))
+* Add coverage docs for codecov ([`e80dc34`](https://github.com/SafeEval/hello-python-project/commit/e80dc34e56b9dd8bda5f19e372744741086c2ea5))
+
 ## v4.0.3 (2021-04-06)
 ### Fix
 * Reference deploy env ([`737e9f0`](https://github.com/SafeEval/hello-python-project/commit/737e9f0f84ef8736c89da1b3a95a927fcfff7fdf))
