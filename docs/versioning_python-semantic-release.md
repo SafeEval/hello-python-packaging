@@ -212,6 +212,39 @@ Prefix      | Bump  | Purpose
 
 ## Manual Releases
 
+### Explicit Manual Version Bumps
+
+Show the next `--patch`, `--minor`, or `--major` version number.
+
+```
+semantic-release print-version --patch
+```
+
+Actually bump to the next version. Changelog won't be affected,
+unless there are any new Conventional Commits to include.
+A new PyPI release will be attempted, but not succeed unless
+crednetials are configured.
+
+```
+$ semantic-release publish --patch
+Bumping with a patch version to 4.0.4
+Pushing new version
+Building distributions
+...
+removing build/bdist.linux-x86_64/wheel
+Uploading to PyPI
+error: Missing credentials for uploading to PyPI
+```
+
+A new Git tag will be created for the version.
+
+```
+$ git tag
+...
+v4.0.4
+```
+
+
 ### Generate and Update Changelog
 
 The `publish` subcommand will create or update a changelog file, and
