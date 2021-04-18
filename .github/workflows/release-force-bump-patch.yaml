@@ -22,7 +22,7 @@ on: workflow_dispatch
 jobs:
   release:
     name: Release Patch Version to PyPI Test
-    if: github.actor.role == 'Maintainer'
+    # if: github.actor.role == 'Maintainer'
     environment:
       name: Test PyPI Release
     runs-on: ubuntu-latest
@@ -36,6 +36,9 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: '3.8'
+
+    - name: Show Github role
+      run: echo "{{ github.actor.role == 'Maintainer' }}"
 
     - name: Install Python Semantic Release
       run: pip install python-semantic-release
