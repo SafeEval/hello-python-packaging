@@ -1,20 +1,13 @@
-# .github/workflows/semantic-release.yaml
+# .github/workflows/release-force-bump-patch.yaml
 #
+# Force a patch level version bump and create a new release.
+#
+# - Environments restrict branches and people that can release.
 # - Updates and commits the changelog.
 # - Tags the commit with the new release.
 # - Builds and uploads the package to PyPI.
-#
-# Running multiple times without changes will
-# cause it to fail. Manual triggers will completely
-# stop if a tag already exists.
 
 name: Release Force Bump Patch
-
-# Automatic execution.
-# on:
-#   push:
-#     branches:
-#       - main
 
 # Manual execution.
 on: workflow_dispatch
@@ -22,7 +15,6 @@ on: workflow_dispatch
 jobs:
   release:
     name: Release Patch Version to PyPI Test
-    # if: github.actor.role == 'Maintainer'
     environment:
       name: Test PyPI Release
     runs-on: ubuntu-latest
@@ -37,11 +29,8 @@ jobs:
       with:
         python-version: '3.8'
 
-    - name: Show Github role
-      run: echo "{{ github.actor.role == 'Maintainer' }}"
-
     - name: Install Python Semantic Release
-      run: pip install python-semantic-release
+      run: pip install python-semantic-release==v7.15.3
 
     - name: Set Github committer
       run: |
