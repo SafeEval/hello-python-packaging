@@ -1,23 +1,24 @@
-# .github/workflows/semantic-release.yaml
+# .github/workflows/release.yaml
 #
+# Create a new release.
+#
+# - Environments restrict branches and people that can release.
 # - Updates and commits the changelog.
 # - Tags the commit with the new release.
 # - Builds and uploads the package to PyPI.
 #
-# Running multiple times without changes will
-# cause it to fail. Manual triggers will completely
-# stop if a tag already exists.
+# Manual triggers will completely stop if a tag already exists.
 
 name: Release
+
+# Manual execution.
+on: workflow_dispatch
 
 # Automatic execution.
 # on:
 #   push:
 #     branches:
 #       - main
-
-# Manual execution.
-on: workflow_dispatch
 
 jobs:
   release:
@@ -33,7 +34,7 @@ jobs:
         fetch-depth: 0
 
     - name: Python Semantic Release
-      uses: relekang/python-semantic-release@master
+      uses: relekang/python-semantic-release@v7.15.3
       with:
         pypi_token: ${{ secrets.PYPI_TOKEN }}
         github_token: ${{ secrets.GH_TOKEN }}
