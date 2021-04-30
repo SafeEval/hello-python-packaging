@@ -30,7 +30,7 @@ jobs:
         python-version: '3.8'
 
     - name: Install Python Semantic Release
-      run: pip install python-semantic-release==v7.15.3
+      run: pip install -r requirements.ci.txt
 
     - name: Bump patch version and release
       run: |
