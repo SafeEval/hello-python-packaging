@@ -33,8 +33,18 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
 
-    - name: Python Semantic Release
-      uses: relekang/python-semantic-release@v7.15.3
+    - uses: actions/setup-python@v2
       with:
-        pypi_token: ${{ secrets.PYPI_TOKEN }}
-        github_token: ${{ secrets.GH_TOKEN }}
+        python-version: '3.8'
+
+    - name: Install Python Semantic Release
+      run: pip install -r requirements.ci.txt
+
+    - name: Bump version and release
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "action@github.com"
+        semantic-release publish
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
