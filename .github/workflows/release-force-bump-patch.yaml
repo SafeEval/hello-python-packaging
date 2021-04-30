@@ -32,13 +32,11 @@ jobs:
     - name: Install Python Semantic Release
       run: pip install python-semantic-release==v7.15.3
 
-    - name: Set Github committer
+    - name: Bump patch version and release
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "action@github.com"
-
-    - name: Bump patch version
-      run: semantic-release publish --patch
+        semantic-release publish --patch
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
