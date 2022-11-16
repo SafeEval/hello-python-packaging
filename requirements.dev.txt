@@ -7,3 +7,4 @@ pre-commit==2.11.1
 pytest==6.2.2
 pytest-cov==2.11.1
 semgrep==0.44.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
